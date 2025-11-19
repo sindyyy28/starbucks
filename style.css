@@ -289,9 +289,11 @@ header {
   header {
     padding: 11px 4%;
   }
+
   #menu-icon {
     display: initial;
   }
+
   header .navbar {
     position: absolute;
     top: -500px;
@@ -302,43 +304,64 @@ header {
     background: #fff;
     box-shadow: 0 4px 4px rgb(14 55 54 / 14%);
     border-top: 2px solid var(--main-color);
-    transition: 0.2s;
+    transition: 0.3s ease;
     text-align: left;
   }
+
   .navbar.active {
     top: 100%;
   }
+
   .navbar a {
-    padding: 1.5rem;
+    padding: 1.2rem;
     display: block;
     color: var(--second-color);
   }
+
+  .home {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .home-text span {
     font-size: 0.9rem;
   }
+
   .home-text h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
   }
+
   .home-text h2 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
-}
-@media (max-width: 768px) {
-  .home-text {
-    padding-top: inherit;
+
+  .shop-container {
+    justify-content: center;
   }
+
   .shop-container .box {
-    margin-top: 6rem;
+    margin-top: 5rem;
+    flex: 1 1 100%;
+    max-width: 300px;
   }
+
   .heading h1 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
   }
+
   .heading span {
-    font-size: 1.9rem;
+    font-size: 1rem;
   }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
   .about {
     flex-direction: column-reverse;
   }
+
   .links {
     display: flex;
     flex-direction: column;
